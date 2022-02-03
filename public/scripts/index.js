@@ -598,7 +598,7 @@ const setupUI = (user) => {
                         <tr><td>Bazy danych: </td> <td>${database}</td></tr>
                         <tr><td>Sieci komputerowe: </td> <td>${computer_network}</td></tr>
                         <tr><td>WF: </td> <td>${physical_education}</td></tr>
-                        <tr><td>Grafika komputerowa: </td> <td>${computer_network}</td></tr>
+                        <tr><td>Grafika komputerowa: </td> <td>${computer_graphics}</td></tr>
                         </tbody>
                         </table>
                         `;
@@ -891,7 +891,7 @@ const setupBlock = (data) => {
                         }
                         else if(condition.subject == "science" || condition.subject == "fizyka")
                         {
-                            icon = '<span class="material-icons"> science </span>';
+                            icon = '<span class="material-icons"> lightbulb </span>';
                             curSubject = 'fizyka';
                         }
                         else if(condition.subject == "english" || condition.subject == "angielski")
@@ -1217,7 +1217,7 @@ const setupBlock = (data) => {
                             }
                             else if(condition.subject == "science" || condition.subject == "fizyka")
                             {
-                                icon = '<span class="material-icons"> science </span>';
+                                icon = '<span class="material-icons"> lightbulb </span>';
                                 curSubject = 'fizyka';
                             }
                             else if(condition.subject == "english" || condition.subject == "angielski")
