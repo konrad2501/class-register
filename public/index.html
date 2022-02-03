@@ -10,6 +10,10 @@
   <title>Dziennik klasowy</title>
 
   <style>
+
+/* <span class="material-icons">
+help
+</span> */
     
     body{
         color: black;
@@ -89,49 +93,49 @@
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="logged-in-isAdmin" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-students">Studenci
+            <a href="#" class="grey-text modal-trigger" title="Wyświetl listę wszystkich studentów." data-target="modal-students">Studenci
                 <span class="material-icons">
                     people
                     </span>
             </a>
           </li>
           <li class="logged-in" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-account">Konto
+            <a href="#" class="grey-text modal-trigger" title="Informacje dotyczące aktualnie zalogowanego uzytkownika." data-target="modal-account">Konto
                 <span class="material-icons">
                     person
                     </span>
             </a>
           </li>
           <li class="logged-in-isAdmin" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-create">Dodaj ocenę
+            <a href="#" class="grey-text modal-trigger" title="Dodaj ocenę dla wybranego studenta." data-target="modal-create">Dodaj ocenę
                 <span class="material-icons">
                     add
                     </span>
             </a>
           </li>
           <li class="logged-out" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-login">Zaloguj
+            <a href="#" class="grey-text modal-trigger" title="Zaloguj się, aby otrzymać dostęp do dziennika." data-target="modal-login">Zaloguj
                 <span class="material-icons">
                     login
                     </span>
             </a>
           </li>
           <li class="logged-out" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Rejestracja
+            <a href="#" class="grey-text modal-trigger" title="Jezeli nie posiadasz konta wykonaj rejestrację." data-target="modal-signup">Rejestracja
                 <span class="material-icons">
                     app_registration
                     </span>
             </a>
           </li>
           <li class="logged-in" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-chat">Czat
+            <a href="#" class="grey-text modal-trigger" title="Czat umozliwiający komunikację między grupami." data-target="modal-chat">Czat
                 <span class="material-icons">
                     chat
                     </span>
             </a>
           </li>
           <li class="logged-in" style="display: none;">
-            <a href="#" class="grey-text" id="logout">Wyloguj
+            <a href="#" class="grey-text" title="Wylogowanie uzytkownika z aktualnej sesji." id="logout">Wyloguj
                 <span class="material-icons">
                     logout
                     </span>
@@ -347,10 +351,16 @@
         <form id="search-form">
             <div class="input-field" style="margin: 40px 20% 0% 20%; padding-left: 40px;">
                 <input id="search" type="search" placeholder="Hash / Klucz publiczny" required>
-                <label class="label-icon" for="search">
+                <label class="label-icon" for="search"> 
                 <i class="material-icons" style="margin-top:10px;">search</i></label>
             </div>
-            <a href="#" class="btn yellow darken-2 z-depth-0 modal-trigger" data-target="modal-search">Wyszukaj</a>
+            <a href="#" class="btn yellow darken-2 z-depth-0 modal-trigger" data-target="modal-search">Wyszukaj
+            </a>
+            <a title="Wpisz hash lub klucz publiczny, aby wyszukac ocenę lub listę ocen danego ucznia.">
+            <span class="material-icons">
+              help
+              </span>
+            </a>
         </form>
         </div>
     </div>
@@ -365,7 +375,12 @@
                   <i class="material-icons" style="margin-top:10px;">admin_panel_settings</i></label>
                 </div>
                 <a href="#" class="btn yellow darken-2 z-depth-0 modal-trigger" data-target="modal-add">Dodaj uprawnienia</a>
-            </form>
+                <a title="Podaj imię i nazwisko nauczyciela, aby nadać mu uprawnienia do zarządzania dziennikiem.">
+                  <span class="material-icons">
+                    help
+                    </span>
+                  </a>
+              </form>
         </div>
     </div>
 
